@@ -1,10 +1,17 @@
-import "./App.css";
-import { Example } from "./components/Example/Example";
+
+import Grandpa from './Grandpa/Grandpa';
+import MoodContextProvider from './themeContext';
+import ThemeSwitcher from './ThemeSwitcher/ThemeSwitcher';
+import BackgroundSwitcher from './BackgroundSwitcher/BackgroundSwitcher';
 
 function App() {
   return (
     <>
-      <Example />{" "}
+      <Grandpa/>
+      <MoodContextProvider>
+         <ThemeSwitcher/>
+         <BackgroundSwitcher></BackgroundSwitcher>
+      </MoodContextProvider>
     </>
   );
 }
