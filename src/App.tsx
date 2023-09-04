@@ -1,10 +1,10 @@
-import "./App.css";
-import { Example } from "./components/Example/Example";
+import React from 'react'
+import Grandpa from './Grandpa/Grandpa';
 
 function App() {
   return (
     <>
-      <Example />{" "}
+      <Grandpa/>
     </>
   );
 }
